@@ -10,6 +10,9 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
+/**
+ * @author LiXiaoPing
+ */
 @Component
 public class ChainExecute implements CommandLineRunner {
 
@@ -19,11 +22,13 @@ public class ChainExecute implements CommandLineRunner {
     private FlowExecutor flowExecutor;
 
     @Override
-    public void run(String... args) throws Exception {
-        //第二个参数为流程入参，示例中没用到，所以传null，实际业务是有值的
-        LiteflowResponse response = flowExecutor.execute2Resp("channelSenderChain", null, BatchMessageResultContext.class);
-        BatchMessageResultContext context = response.getFirstContextBean();
+    public void run(String... args) {
+        // 第二个参数为流程入参，示例中没用到，所以传null，实际业务是有值的
+        LiteflowResponse response = flowExecutor.execute2Resp("channelSenderChain",
+            null, BatchMessageResultContext.class);
+
         if (response.isSuccess()){
+            BatchMessageResultContext context = response.getFirstContextBean();
             log.info("执行成功，最终选择的渠道是{}", context.getFinalResultChannel());
         }else{
             log.error("执行失败", response.getCause());

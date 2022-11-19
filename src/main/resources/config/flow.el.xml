@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <flow>
     <chain name="channelSenderChain">
+        // 选择剩余量最多的渠道
         selectBestChannel = THEN(
                                 WHEN(
                                     channel1Query, channel2Query, channel3Query,
@@ -9,6 +10,7 @@
                                 channelSelector
                             ).id("branch1");
 
+//      根据业务信息选择短信渠道子流程
         selectBizChannel = THEN(
                                 biz1,
                                 SWITCH(if_2).to(
