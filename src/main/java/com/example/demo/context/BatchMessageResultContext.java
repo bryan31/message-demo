@@ -5,9 +5,12 @@ import com.example.demo.vo.QueryVO;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author LiXiaoPing
+ */
 public class BatchMessageResultContext {
 
-    private List<QueryVO> queryResultList;
+    private final List<QueryVO> queryResultList = new ArrayList<>();
 
     private String finalResultChannel;
 
@@ -15,9 +18,6 @@ public class BatchMessageResultContext {
         return queryResultList;
     }
 
-    public void setQueryResultList(List<QueryVO> queryResultList) {
-        this.queryResultList = queryResultList;
-    }
 
     public String getFinalResultChannel() {
         return finalResultChannel;
@@ -28,9 +28,6 @@ public class BatchMessageResultContext {
     }
 
     public void addQueryVO(QueryVO queryVO){
-        if (queryResultList == null){
-            queryResultList = new ArrayList<>();
-        }
         queryResultList.add(queryVO);
     }
 }
