@@ -9,7 +9,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * 组装数据流程组件
- * @author LiXiaoPing
+ * @author bryan31
  */
 @LiteflowComponent(id = PACKAGE_DATA, name = "组装数据")
 public class PackageDataCmp extends NodeComponent {

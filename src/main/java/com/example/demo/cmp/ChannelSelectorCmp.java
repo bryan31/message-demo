@@ -10,7 +10,8 @@ import java.util.List;
 
 /**
  * 渠道余量最大选择器
- * @author LiXiaoPing
+ *
+ * @author bryan31
  */
 @LiteflowComponent(id = CHANNEL_SELECTOR, name = "渠道余量最大选择器")
 public class ChannelSelectorCmp extends NodeComponent {

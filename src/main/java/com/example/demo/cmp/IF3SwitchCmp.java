@@ -11,7 +11,7 @@ import java.util.concurrent.ThreadLocalRandom;
 /**
  * 业务判断3选择组件，并行获取供应商渠道剩余量
  *
- * @author LiXiaoPing
+ * @author bryan31
  */
 @LiteflowComponent(id = IF_3, name = "业务判断3，并行获取供应商渠道剩余量")
 public class IF3SwitchCmp extends NodeSwitchComponent {

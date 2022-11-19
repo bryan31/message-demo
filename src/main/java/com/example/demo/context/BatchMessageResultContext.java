@@ -6,7 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author LiXiaoPing
+ * 选择短信渠道流程上下文
+ *
+ * @author bryan31
  */
 public class BatchMessageResultContext {
 

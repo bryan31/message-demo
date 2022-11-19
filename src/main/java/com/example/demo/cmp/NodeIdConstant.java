@@ -1,11 +1,9 @@
 package com.example.demo.cmp;
 
 /**
+ * 流程组件Id常量声明
+ *
  * @author 李小平
- * @Description 流程组件Id常量声明
- * @Project 供水SaaS
- * @Date 2022-11-19 10:14
- * @Version V1.0
  */
 public interface NodeIdConstant {
 
@@ -119,4 +117,9 @@ public interface NodeIdConstant {
    * 渠道余量最大选择器组件Id
    */
   String CHANNEL_SELECTOR =  "channelSelector";
+
+  /**
+   * 批量发送器组件Id
+   */
+  String BATCH_SENDER = "batchSender";
 }

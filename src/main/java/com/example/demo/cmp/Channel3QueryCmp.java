@@ -11,7 +11,7 @@ import com.yomahub.liteflow.core.NodeComponent;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * @author LiXiaoPing
+ * @author bryan31
  */
 @LiteflowComponent(id = CHANNEL3_QUERY, name = "获取渠道3剩余量")
 public class Channel3QueryCmp extends NodeComponent {

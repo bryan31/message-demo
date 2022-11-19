@@ -9,7 +9,7 @@ import com.yomahub.liteflow.core.NodeComponent;
 /**
  * 返回短信渠道5普通组件
  *
- * @author LiXiaoPing
+ * @author bryan31
  */
 @LiteflowComponent(id = CHANNEL5, name = "返回短信渠道5")
 public class Channel5Cmp extends NodeComponent {

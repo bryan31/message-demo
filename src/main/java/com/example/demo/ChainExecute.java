@@ -11,7 +11,9 @@ import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 
 /**
- * @author LiXiaoPing
+ * 流程启动器
+ *
+ * @author bryan31
  */
 @Component
 public class ChainExecute implements CommandLineRunner {
@@ -29,9 +31,9 @@ public class ChainExecute implements CommandLineRunner {
 
         if (response.isSuccess()){
             BatchMessageResultContext context = response.getFirstContextBean();
-            log.info("执行成功，最终选择的渠道是{}", context.getFinalResultChannel());
-        }else{
-            log.error("执行失败", response.getCause());
+            log.info("执行成功，最终选择的渠道是:{}", context.getFinalResultChannel());
+        } else {
+            log.error("执行失败!", response.getCause());
         }
     }
 }

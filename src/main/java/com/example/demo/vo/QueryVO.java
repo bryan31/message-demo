@@ -1,12 +1,14 @@
 package com.example.demo.vo;
 
 /**
- * @author LiXiaoPing
+ * 短信渠道剩余短信包数量数据类
+ *
+ * @author bryan31
  */
 public class QueryVO {
 
     /**
-     * 渠道名称
+     * 短信渠道名称
      */
     private final String channel;
 

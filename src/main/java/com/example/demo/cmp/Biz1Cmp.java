@@ -9,7 +9,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * 获取业务动态值普通组件
- * @author LiXiaoPing
+ * @author bryan31
  */
 @LiteflowComponent(id = BIZ1, name = "获取业务动态值")
 public class Biz1Cmp extends NodeComponent {

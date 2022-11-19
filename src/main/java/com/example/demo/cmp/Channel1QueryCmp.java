@@ -12,7 +12,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * 获取渠道1剩余量
- * @author LiXiaoPing
+ * @author bryan31
  */
 @LiteflowComponent(id = CHANNEL1_QUERY, name = "获取渠道1剩余量")
 public class Channel1QueryCmp extends NodeComponent {

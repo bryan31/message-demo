@@ -11,6 +11,8 @@ import com.yomahub.liteflow.core.NodeComponent;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
+ * 获取渠道5剩余量
+ *
  * @author LiXiaoPing
  */
 @LiteflowComponent(id = CHANNEL5_QUERY, name = "获取渠道5剩余量")

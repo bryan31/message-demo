@@ -7,7 +7,7 @@ import com.yomahub.liteflow.annotation.LiteflowComponent;
 import com.yomahub.liteflow.core.NodeComponent;
 
 /**
- * @author LiXiaoPing
+ * @author bryan31
  */
 @LiteflowComponent(id = CHANNEL1, name = "返回短信渠道1")
 public class Channel1Cmp extends NodeComponent {

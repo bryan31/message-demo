@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * 业务判断1流程选择组件：选择短信渠道
- * @author LiXiaoPing
+ * @author bryan31
  */
 @LiteflowComponent(id = IF_1, name = "业务判断1：选择短信渠道")
 public class IF1SwitchCmp extends NodeSwitchComponent {
