@@ -10,7 +10,7 @@
 
 我理了理逻辑，整个关系图应该是这样的，其中我把一个个去查的变成了并行去查，为了节约串行去查的IO耗时问题。
 
-![preview](images/01-原业务流程.png)
+![preview](./images/01-原业务流程.png)
 
 其中有些复杂查库逻辑，判断幂等性的步骤我就去掉了。只挑选了关键的步骤画上去。
 
@@ -26,7 +26,7 @@
 
 比如这种图：
 
-![2.jpg](images/lite-flow-rule.png)
+![2.jpg](./images/lite-flow-rule.png)
 
 在LiteFlow用规则表示就是：
 
@@ -46,7 +46,7 @@
 
 再来看这个图：
 
-![3.jpg](images/01-lite-flow-rule-2.png)
+![3.jpg](./images/01-lite-flow-rule-2.png)
 
 在LiteFlow里规则表示就是：
 
@@ -70,7 +70,7 @@ LiteFlow的文档里作者给出了很详细的例子，还有一些复杂例子
 
 LiteFlow的文档里作者给出了很详细的例子，还有一些复杂例子，比如：
 
-![4.jpg](images/01-lite-flow-rule-3.png)
+![4.jpg](./images/01-lite-flow-rule-3.png)
 
 这种复杂的例子用LiteFlow的表达式可以写成：
 
